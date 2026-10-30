@@ -1,0 +1,20 @@
+
+run: "python -m uvicorn app.main:app --host 127.0.0.1 --port 8000"
+seed: "python -m app.seed"
+test: "python -m pytest tests/ -q"
+
+base_url: "http://127.0.0.1:8000"
+
+endpoints:
+  - method: GET
+    path: /
+  - method: GET
+    path: /health
+  - method: POST
+    path: /usage
+  - method: GET
+    path: /usage
+  - method: POST
+    path: /webhooks/stripe
+  - method: POST
+    path: /billing/checkout
