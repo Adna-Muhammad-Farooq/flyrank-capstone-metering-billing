@@ -84,9 +84,17 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
+
 ### 2. Install Dependencies
 
-Install FastAPI, Uvicorn, SQLAlchemy, PostgreSQL driver, Alembic, Stripe, APScheduler, python-dotenv, requests, pytest, and other required testing dependencies.
+After activating the Python virtual environment, install the project dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+All required Python packages and their versions are listed in `requirements.txt`.
+
 
 ### 3. Configure Environment Variables
 
